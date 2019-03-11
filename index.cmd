@@ -34,8 +34,12 @@ if ["%FILENAME%"] EQU [""] ( goto ERROR_NO__FILENAME     )
 if ["%VERSION%"]  EQU [""] ( goto ERROR_NO__VERSION      )
 if ["%ID%"]       EQU [""] ( goto ERROR_NO__ID           )
 
+echo.
+@echo on
+call node.exe index.js "%JWT_ISSUER%" "%JWT_SECRET%" "%FILENAME%" "%VERSION%" "%ID%"
+@echo off
+echo.
 
-call node.exe index.js "%JWT_ISSUER%" "%JWT_SECRET%" %*
 set "EXIT_CODE=%ErrorLevel%"
 
 goto END
