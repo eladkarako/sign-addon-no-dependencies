@@ -12,7 +12,6 @@ set "FILENAME="
 set "VERSION="
 set "ID="
 
-
 chcp 65001 2>nul >nul
 
 
@@ -34,11 +33,9 @@ if ["%FILENAME%"] EQU [""] ( goto ERROR_NO__FILENAME     )
 if ["%VERSION%"]  EQU [""] ( goto ERROR_NO__VERSION      )
 if ["%ID%"]       EQU [""] ( goto ERROR_NO__ID           )
 
-echo.
 @echo on
-call node.exe index.js "%JWT_ISSUER%" "%JWT_SECRET%" "%FILENAME%" "%VERSION%" "%ID%"
+call "node.exe" "index.js" "%JWT_ISSUER%" "%JWT_SECRET%" "%FILENAME%" "%VERSION%" "%ID%"
 @echo off
-echo.
 
 set "EXIT_CODE=%ErrorLevel%"
 
