@@ -1,2 +1,1 @@
 user:0a1b2:c4d
-** (this line is ignored) get your own issuer/secret from https://addons.mozilla.org/en-US/developers/addon/api/key/ **
