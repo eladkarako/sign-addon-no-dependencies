@@ -16,7 +16,7 @@ set  ARGS=%ARGS% "%~sdp0nothing.xpi"
 ::---------------------------------------version
 set  ARGS=%ARGS% "22.22.22.22"
 ::---------------------------------------id
-set  ARGS=%ARGS% "nothing@eladkarako.com""
+set  ARGS=%ARGS% "nothing@eladkarako.com"
 
 call "%~sdp0index.cmd" %ARGS%
 
