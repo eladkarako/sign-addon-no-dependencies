@@ -66,4 +66,3 @@ SIGN_ADDON(CONF)
   .then(on_done)
   .catch(on_error)
 ;
-
